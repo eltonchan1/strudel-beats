@@ -1,12 +1,57 @@
 setcpm(90)
 
-drums1: s("<hh <hh oh> hh hh>*2, <[bd [- - bd]] [sd -] [- [bd -]] [sd [- - bd]] [bd [- - bd]] [sd - - [- bd]] [- - - -] [- - - -]>")
+// drums
+
+_hihats: s("<hh <hh oh> hh hh>*2")
+
+_drums_pattern_intro: s(
+  `<[bd [- - bd]] [sd -] [- [bd -]] [sd [- - bd]] 
+  [bd [- - bd]] [sd - - [- bd]] [- [- sd -] bd -] ->`)
+
+_drums_pattern1: s("<[bd -] [sd bd] [- bd] [sd -]>")
+
+_drums_pattern2: s("<[bd [- - bd]] [sd [- - sd]] [[- - sd] [bd -]] [sd]>")
+
+_drums_pattern3: s(
+  `<[bd [- - bd]] [sd [- - sd]] [[- - sd] [bd -]] [sd - bd - - -] 
+  [bd bd] [sd - - - - bd] [- - sd bd - -] [sd]>`)
+
+_drums_pattern4: s("<bd, - [sd [- - sd]] [[- - sd] -] [sd]>")
+
+_drums_pattern_outro: s(
+  `<[bd [- - bd]] [sd -] [- [bd -]] [sd - - -] 
+  [bd [- - bd]] [sd - - [- bd]] [- [- sd -] bd -] [sd - - -] 
+  [bd [- - bd]] [sd -] [- [bd -]] [sd [- - bd]] 
+  [bd [- - bd]] [sd - - - - bd] [bd - - sd - -] ->`)
+
+_fill_in1: s("<[bd - - - - bd] [bd - - - - bd] [bd - - - - bd] [bd bd]>")
+  
+_fill_in2: s("<[bd bd] - - ->")
+
+_fill_in3: s("<[bd] [bd - - - - sd] [bd bd] [sd]>")
+
+_fill_in4: s("<[bd - - sd - sd] [bd - sd ht mt lt] [cr] [-]>")
+
+_crash: s("cr")
+
+// chords
+
+$: note(`<[f4,a4] - - - [e4,c4] - [e4,c4] [bb3,d4]
+          [a,c#4] - [a,c#4] [c#4,e4] [d4,f4] - [c4,e4] [f4,a]
+          [bb,d4] - - - [c4,e4] - - -
+          [f4,a4] [- [e4,c5]] [- [e4,c5]] - [a,g4] [- [d4,f4]] [- [d4,f4]] -
+          [f4,a4] [- [e4,c5]] [- [e4,c5]] - [a,g4] [- [d4,f4]] [- [d4,f4]] -
+          [f4,a4] [- [c#4,g4]] [- [c#4,g4]] - [d4,f4] [- [c4,d#4]] [- [d4,f4]] [- [d4,f4] - -]
+          [f4,a4] [- [e4,g4]] [- [e4,g4]] - [c4,f4] [- [c4,f4]] [- [c4,f4]] -
+          [f4,a4] [- [e4,g4]] [- [e4,g4]] - [c4,f4] [c4,f4] [[c4,f4] [c4,f4]] -
+          [f4,a4] [f4,a4] [e4,g4] [e4,g4] [e4,g4] [e4,g4] [f4,a4] [f4,a4]
+          [bb,d4] [bb,d4] [c#4,e4] [c#4,e4] [d4,f4] [d4,f4] [f4,a4] [f4,a4]
+          [f4,a4] [f4,a4] [e4,g4] [e4,g4] [e4,g4] [e4,g4] [f4,a4] [f4,a4]
+          [bb,d4] [bb,d4] [[e4,g4] [e4,g4]] - - - - -
+          >`).sound("piano")
+.release(0.75)
 ._pianoroll()
 
-_$: s("<hh <hh oh> hh hh>*2, <[bd [- - bd]] [sd [- sd]] [[- - sd] [bd -]] [sd]>")
-._pianoroll()
-
-_$: note(`<[f,a] - - - [e,g] - [e,c4] [bb3,d]
-          [a,c#] - [a,c#] [c#,e] [d,f] - [c,e] [f2,a2]
-          [bb3,d] - - - [c,e] - - ->`).sound("piano")
+_test: note(`<[bb,d4] [bb,d4] [c#4,e4] [c#4,e4] [d4,f4] [d4,f4] [f4,a4] [f4,a4]>`).sound("piano")
+.release(0.75)
 ._pianoroll()
