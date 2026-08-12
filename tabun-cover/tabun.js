@@ -36,7 +36,7 @@ _crash: s("cr")
 
 // chords
 
-$: note(`<[f4,a4] - - - [e4,c4] - [e4,c4] [bb3,d4]
+_full_song_chords$: note(`<[f4,a4] - - - [e4,c4] - [e4,c4] [bb3,d4]
           [a,c#4] - [a,c#4] [c#4,e4] [d4,f4] - [c4,e4] [f4,a]
           [bb,d4] - - - [c4,e4] - - -
           [f4,a4] [- [e4,c4]] [- [e4,c4]] - [a,g4] [- [d4,f4]] [- [d4,f4]] -
@@ -62,10 +62,68 @@ $: note(`<[f4,a4] - - - [e4,c4] - [e4,c4] [bb3,d4]
           [bb,d4] [bb,d4] [c#4,e4] [c#4,e4] [d4,f4] [d4,f4] [f4,a4] [f4,a4]
           [f4,a4] [f4,a4] [e4,g4] [e4,g4] [e4,g4] [e4,g4] [f4,a4] [f4,a4]
           [bb,d4] [bb,d4] [[e4,g4] [e4,g4]] -
+          [f4,a4] - [e4,g4] [e4,g4] [e4,g4] - [d4,f4] [d4,f4] [bb,d4] - [c#4,e4] [c#4,e4] [d4,f4] - [c4,eb4] [d4,f4] [bb,d4] - [c4,e4] [c4,e4] [c4,e4] - [d4,f4] [d4,f4] [bb,d4] - [[c4,e4] [c4,e4]] -
+          [[f4,a4] [f4,a4]] - [- - [f4,a4] -] [- [f4,a4] - -] [[e4,g4] [e4,g4]] [- - - [d4,f4]] [- - [d4,f4] -] [[bb,d4] [bb,d4]] [g,bb] [d4,f4] [c#4,e4,g4] [g4,bb4] [f4,a4] [a4,c5] [c4,eb4] [d4,f4]
+          [[f4,a4] [f4,a4]] - [- - [f4,a4] -] [- [f4,a4] - -] [[e4,g4] [e4,g4]] [- - - [d4,f4]] - [d4,f4] [bb,d4] - [d4,f4] [f4,g4] [c#4,e4] - [b4,d5] [c#5,e5] - - - -
+          [f4,a4] [- [e4,g4]] - -
+          [f#4,a#4] - [f4,g#4] [f4,g#4] [f4,g#4] - [f#4,a#4] [f#4,a#4] [b,eb4] - [d4,f4] [g#4,b4] [gb4,bb4] - [f#4,ab4] [gb4,bb4] [gb4,bb4] - [f4,g#4] [f4,g#4] [f4,g#4] - [f#4,bb4] [f#4,bb4] [b,eb4] - [f4,ab4] [bb,eb4] [c#4,f#4] - [- [f#4,bb4]] [- [f#4,bb4]]
+          [f#4,a#4] - [f4,g#4] [f4,g#4] [f4,g#4] - [f#4,a#4] [f#4,a#4] [b,eb4] - [d4,f4] [g#4,b4] [gb4,bb4] - [f#4,ab4] [gb4,bb4] [gb4,bb4] - [f4,g#4] [f4,g#4] [f4,g#4] - [f#4,bb4] [f#4,bb4] [b,eb4] - [f4,ab4] [bb,eb4] [c#4,f#4] - [c#4,f#4] [f#4,bb4] [f#4,bb4] - [[c#4,g#4,c#5] [c#4,g#4,c#5]] -
+          [f#4,a#4] - [f4,g#4] [f4,g#4] [f4,g#4] - [f#4,a#4] [f#4,a#4] [b,eb4] - [d4,f4] [g#4,b4] [gb4,bb4] - [f#4,ab4] [gb4,bb4] [gb4,bb4] - [f4,g#4] [f4,g#4] [f4,g#4] - [f#4,bb4] [f#4,bb4] [b,eb4] - [[f4,ab4] [f4,ab4]] - 
+          [f#4,a#4] [- [c#4,f4,ab4]] - - [bb,f4,ab4] [- [f#4,bb4]] - - [b,d#4] [- [c#4,f4,ab4]] - - [bb,c#4,f#] - - -
           >`).sound("piano")
 .release(0.75)
+
+// bass
+
+_intro: note(`<bb2@@@ c@ c bb2 a2@ c# e d@ d# f2 bb1@@@ c2@@ - - - ->`).sound("sine")
+
+
+_section1: note(`<[- - f c@ f2] bb1 [- c2] [- c2] - a1 [- d2] [- d2] - bb1 [- a1] [- a1] - d2 [- eb2] [- f2] - bb1 [- c2] [- c2] - f1 [- f1] [- f1] - bb1 [- c2] [- c2]
+                 - - - - -
+                [bb1@@ bb1@ bb1] [- - bb2 bb1@ b1] [c2 c3] [bb1 bb2]
+                [a1@@ a2@ a1] [- - a1 c2@ c#2] [d2 d2] [a1]
+                [g1@@ g2@ g1] [- - g1 g2@ g#2] [a2 a1] [e2 a1]
+                [d2 a2] [d3@ d2 d3@ c#3] [c3 c2] [f2 a1]
+                [bb1@@ bb1@ bb1] [- - bb2 bb1@ b1] [c2 c3] [bb1 bb2]
+                [a1@@ a2@ a1] [- - a1 c2@ c#2] [d2@@ d3@ c#3] [c3 - c2 f2 - a1]
+                [g1@ g2 g1@@] [g1 - g2 bb1@ b1] [c2 c2]
+                >`).sound("sine")
+.gain(2)
 ._pianoroll()
 
-_test: note(`<[f4,a4] [- [e4,g4]] [- [e4,g4]] [[e4,g4] [e4,g4]] [c4,f4] [c4,f4] [[c4,eb4] [c4,eb4]] [[c4,f4] [c4,f4]]>`).sound("piano")
-.release(0.75)
+
+_full: note(`<bb2@@@ c@ c bb2 a2@ c# e d@ d# f2 bb1@@@ c2@@ - - - - - - - -
+            [- - f c@ f2] bb1 [- c2] [- c2] - a1 [- d2] [- d2] - bb1 [- a1] [- a1] - d2 [- eb2] [- f2] - bb1 [- c2] [- c2] - f1 [- f1] [- f1] - bb1 [- c2] [- c2]
+            - - - - -
+            [bb1@@ bb1@ bb1] [- - bb2 bb1@ b1] [c2 c3] [bb1 bb2]
+            [a1@@ a2@ a1] [- - a1 c2@ c#2] [d2 d2] a1
+            [g1@@ g2@ g1] [- - g1 g2@ g#2] [a2 a1] [e2 a1]
+            [d2 a2] [d3@ d2 d3@ c#3] [c3 c2] [f2 a1]
+            [bb1@@ bb1@ bb1] [- - bb2 bb1@ b1] [c2 c3] [bb1 bb2]
+            [a1@@ a2@ a1] [- - a1 c2@ c#2] [d2@@ d3@ c#3] [c3 - c2 f2 - a1]
+            [g1@ g2 g1@@] [g1 - g2 bb1@ b1] [c2 c2]
+            - - - - - - - - - - - - - - - -
+            [- - f c@ f2] bb1 [- c2] [- c2] [- - c2 c3@ bb2] [a2@@@@ a1] [- - a1 d2@@] [- - - d2@@] -
+            bb1 [- a1] [- a1] [- - - a2@ a1] d2 [- - - eb2@@] [- - - f2@@] [- - a1@@ -]
+            bb1 [- c2] [- c2] [- - - bb1@ c2] a1 [- d2] [- d2] [- a1]
+            bb1 [- c2] [- c2] - f1 f1 [f2 f2] [- - f c@ f2]
+            bb1 [- c2] [- c2] - a1 [- d2] [- d2] -
+            bb1 [- a1] [- a1] - d2 [- - - eb2@@] [- - - f2@@] [- - a1@@ -]
+            bb1 [- c2] [- c2] [c3 bb1] a1 [- d2] [- d2] [d3 c2]
+            bb1 [- c2] [- g2] [c3 c2] - - [eb2 f2] [c3 c2]
+            [bb1@@ bb1@ bb1] [- - bb2 bb1@ b1] [c2 c3] [bb1 bb2]
+            [a1@@ a2@ a1] [- - a1 c2@ c#2] [d2 d2] a1
+            [g1@@ g2@ g1] [- - g1 g2@ g#2] [a2 a1] [e2 a1]
+            [d2 a2] [d3@ d2 d3@ c#3] [c3 c2] [f2 a1]
+            [bb1@@ bb1@ bb1] [- - bb2 bb1@ b1] [c2 c3] [bb1 bb2]
+            [a1@@ a2@ a1] [- - a1 c2@ c#2] [d2@@ d3@ c#3] [c3 - c2 f2 - a1]
+            [g1@ g2 g1@ g1] [- - g2 b1@@] [c2@@ c2@ d3] [c3@ a2 c2@@]
+            [bb1@@@@ bb1] [- - bb2 bb1@ b1] [c2 c2] bb1 [a1@@ a2@ a1] [- - a1 c2@ c#2] [d2 d2] a1
+            [g1@@@@ g2] [- - g1 g2@ g#2] [a2 a1] [e2 a1] [d2 a2] [d3@ d2 d3@ c#3] [c3 c2] [f2 a1]
+            >`).sound("sine")
+.gain(2)
+._pianoroll()
+
+test: note(`<>`).sound("sine")
+.gain(2)
 ._pianoroll()
