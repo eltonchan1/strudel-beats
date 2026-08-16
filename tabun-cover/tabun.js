@@ -305,9 +305,9 @@ _melody: note(`<[- - - f@ g] [a f] [f d] [d bb2] [bb2 a]
                  d@ - -
                  - [- d] [c a2] [g2 f2]
                  - - - - - - - -
-                 [f@ c c@ -] [c a2] [d@ c - - -] [- - - - - f2]
+                 [f@ c c@ c] [c a2] [d@ c - - -] [- - - - - f2]
                  [g2@ f2 g2@ f2] [g2@ f2 g2@ f2] [a2@ c - - -] -
-                 [f@ c c@ -] [c@@ a2@ a2] [d@ c - - -] [- - - - - f]
+                 [f@ c c@ -] [c a2] [d@ c - - -] [- - - - - f]
                  [g@ f g@ f] [g@ f g@ a] [f# d] [c d]
                  [f e] [c g2] [a2 c] [g2 f2]
                  - [- - - - - d2] [d2 a2] [g2 -]
@@ -318,16 +318,67 @@ _melody: note(`<[- - - f@ g] [a f] [f d] [d bb2] [bb2 a]
                  [d e] [f d] [e f] [g f]
                  [g c4] [bb c4] [bb@@ - a] [- - - f@ g]
                  [a g] [d4 bb] [a g] [- - e e@ f]
-                 [g@@@@ g] [g c4] [d4 c4] [a c4]
+                 [g@ - - - g] [g c4] [d4 c4] [a c4]
                  [f - - -] [f a@ d f@] [- - - - - d] [d@ f -]
-                 [f@ - - - f] [a@ d f@ -] [- - - - - d] [d@ f -]
-                 - - - -
+                 - - - - - - - - - - - - - - - -
+                 [f@ c c@ c] [c a2] [d@ c - - -] [- - - - - f2]
+                 [g2@ f2 g2@ f2] [g2@ f2 g2@ f2] [a2@ c - - -] -
+                 [f@ c c@ -] [c a2] [d@ c - - -] [- - - - - f]
+                 [g@ f g@ f] [g@ f g@ a] [f# d] [c d]
+                 [f e] [c g2] [a2 c] [g2 f2]
+                 - - [d2 a2] [g2 -]
+                 [f e] [c g2] [a2 c] [g2 f2]
+                 - [- - - g2@ f2] - [- - d d@ d]
+                 [f f] [f@ f f@ -] [f@@ d@ a] [- - d d@ d]
+                 [f f] [f@ f f@ -] [f@@ d@ a] [- - d d@ d]
+                 [f f] [f@ f f@ -] [f@@ d@ a] [- - a a@ bb]
+                 [c4@ a - - a] [g@ f f@ -] [g@ a a@ bb] [a g]
+                 [f -] [d@ f d@ f] [a g] [e a2]
+                 [c -] [a2 c] [g f] [e c]
+                 [d e] [f g] [e c] [g f]
+                 - - [d e] [f g]
+                 [a g] [d4 a] [a g] [- - - e@ f]
+                 [g f] [c4 a] [g f] [- c]
+                 [d e] [f d] [e f] [g f]
+                 [g c4] [bb c4] [bb@@ - a] [- - - f@ g]
+                 [a g] [d4 bb] [a g] [- - e e@ f]
+                 [g -] [g c4] [d4 c4] [a d]
+                 [f -] [d f] [bb a] [c g]
+                 f@@@
+                 - - - - - - - - - - - - - - - - - - - - - - - [- - - - - g]
+                 [a@ g a@ g] [a@ g d@ g] [a@ g a@ d4] [- - a g@ f]
+                 [g@ f g@ c4] [- - a - - g] [- - f - - -] [d c]
+                 [bb2 c] [d f] [g f] [g f]
+                 [g c4] [bb c4] [bb@ - a@ a] [- - - f@ g]
+                 [- - a a@ g] [a@ g d@ g] [a@ - - - g] [a@ d4 a@ f]
+                 [g - - - - f] [g@ g c@ c] [d c] [a d]
+                 f [d e] [f g] [a d4]
+                 c#4@ d4 e4
+                 - - - [d@ e f@ g]
+                 [a g] [d4 a] [a g] [d#@ f f#@ g#]
+                 [a# g#] [d#4 a#] [a# g#] [- - - f@ f#]
+                 [g# f#] [c#4 a#] [g# f#] [- c#]
+                 [d# f] [f# d#] [f f#] [g# f#]
+                 [g# c#4] [b c#4] [b@@ - a#] [- - - f#@ g#]
+                 [a# g#] [d#4 b] [a# g#] [- - f f@ f#]
+                 [g#@ - - - g#] [g# c#4] [d#4 c#4] [a# c#4]
+                 [f#@ - - - f#] [a#@ d# f#@ -] [- - - - - d#] [d#@ f# -]
+                 - - [d# f] [f# g#]
+                 [a# g#] [d#4 a#] [a# g#] [- - - f@ f#]
+                 [g# f#] [c#4 a#] [g# a#] [- c#]
+                 [d# f] [f# d#] [f f#] [g# f#]
+                 [g# c#4] [b c#4] [b@@ c#4@ a#] [- - - f#@ g#]
+                 [a#@ - - - a#] [d#4@@ b@ b] [a# g#] [- - f f@ f#]
+                 [g#@ - - - g#] [g# c#4] [d#4 c#4] [a# c#4]
+                 [f#@ - - - f#] [a#@ d# f#@ -] [- - - - - d#] [d#@ f# -]
+                 - - [- eb] [bb eb] [- bb]
+                 [eb f#] [- bb] [eb f#] -
               >`).sound("triangle")
 .transpose(12)
 ._pianoroll()
 
-test: note(`<[f@ - - - f] [a@ d f@ -] [- - - - - d] [d@ f -]
-                 - - - ->`)
+test: note(`<-
+              >`).sound("triangle")
 .transpose(12)
 ._pianoroll()
 
