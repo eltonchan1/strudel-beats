@@ -2,42 +2,104 @@ setcpm(90)
 
 // drums
 
-_hihats: s("<hh <hh oh> hh hh>*2")
-
-_drums_pattern_intro: s(
-  `<[bd [- - bd]] [sd -] [- [bd -]] [sd [- - bd]] 
-  [bd [- - bd]] [sd - - [- bd]] [- [- sd -] bd -] ->`)
-
-_drums_pattern1: s("<[bd -] [sd bd] [- bd] [sd -]>")
-
-_drums_pattern2: s("<[bd [- - bd]] [sd [- - sd]] [[- - sd] [bd -]] [sd]>")
-
-_drums_pattern3: s(
-  `<[bd [- - bd]] [sd [- - sd]] [[- - sd] [bd -]] [sd - bd - - -] 
-  [bd bd] [sd - - - - bd] [- - sd bd - -] [sd]>`)
-
-_drums_pattern4: s("<bd, - [sd [- - sd]] [[- - sd] -] [sd]>")
-
-_drums_pattern_outro: s(
-  `<[bd [- - bd]] [sd -] [- [bd -]] [sd - - -] 
-  [bd [- - bd]] [sd - - [- bd]] [- [- sd -] bd -] [sd - - -] 
-  [bd [- - bd]] [sd -] [- [bd -]] [sd [- - bd]] 
-  [bd [- - bd]] [sd - - - - bd] [bd - - sd - -] ->`)
-
-_fill_in1: s("<[bd - - - - bd] [bd - - - - bd] [bd - - - - bd] [bd bd]>")
-  
-_fill_in2: s("<[bd bd] - - ->")
-
-_fill_in3: s("<[bd] [bd - - - - sd] [bd bd] [sd]>")
-
-_fill_in4: s("<[bd - - sd - sd] [bd - sd ht mt lt] [cr] [-]>")
-
-_crash: s("cr")
-
-_full_drums: s(`< - - - - - - - - - - - - - - - - 
+drums_hihat$: s(`<- - - - - - - - - - - - - - - - -
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh hh] -
+             - - - - - - - -
+             [[hh,cr] hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] -
+             [[hh,cr] hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] -
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] -
+             [hh hh] [hh hh] [hh oh] -
+             [hh hh] [hh hh] [hh oh] -
+             [hh hh] [hh hh] [hh oh] -
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [[hh,cr] hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] -
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             - - - -
+             - - - - 
+             [[hh,cr] hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [[hh,cr] hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [[hh,cr] hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh oh] -
+             [hh hh] [hh hh] [hh oh] -
+             [hh hh] [hh hh] [hh oh] -
+             [hh hh] [hh hh] [hh oh] [hh hh]
+             [hh hh] [hh hh] [hh hh] -
+            >`)
+.gain(0.5)
+._pianoroll()
+drums_bass_snare_rim$: s(`<- - - - - - - - - - - - - - - - - 
                [bd [- - bd]] sd [- bd] [sd [- - bd]] 
                [bd [- - bd]] [sd@@ [- bd]] [- [- sd@] bd@] -
-               - - - - - - - sd
+               - - - - - - - rim
                bd [sd bd] [- bd] sd
                bd [sd bd] [- bd] sd
                bd [sd bd] [- bd] sd
@@ -45,7 +107,7 @@ _full_drums: s(`< - - - - - - - - - - - - - - - -
                bd [sd bd] [- bd] sd
                bd [sd bd] [- bd] sd
                bd [sd bd] [- bd] sd
-               [bd@@@@ bd] [bd@@@@ bd] [bd bd] sd
+               [bd@@@@ bd] [bd@@@@ bd] [bd bd] rim
                [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
                [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
                [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
@@ -53,17 +115,85 @@ _full_drums: s(`< - - - - - - - - - - - - - - - -
                [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
                [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
                [bd [- - bd]] [sd [- - sd]] [bd bd] -
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd@@@@ bd] [bd@@@@ bd] [bd bd] rim
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] [sd@ bd@@@]
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd] [bd@@@@ sd] [bd bd] rim
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] rim
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] rim
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] rim
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] [sd@ bd@@@]
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd@@@@ bd] [bd@@@@ bd] [bd bd] [sd@@@@ sd]
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [bd bd] -
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [bd bd] -
+               [bd bd] [sd [- - sd]] [[- - sd] bd] [sd@ bd@@@]
+               [bd bd] [sd [- - bd]] [- bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd bd] [sd [- - sd]] [[- - sd] bd] [sd@ bd@@@]
+               [bd bd] [sd [- - bd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd@@ sd@ sd] [- [- bd@] sd ht mt lt] cr -
+               - - - -
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [[- - sd] bd] sd
+               [bd [- - bd]] [sd [- - sd]] [bd bd] -
+               bd [[sd,bd] [- - sd]] [[bd@ sd] -] [bd,sd]
+               bd [[sd,bd] [- - sd]] [[bd@ sd] -] [bd,sd]
+               bd [[sd,bd] [- - sd]] [[bd@ sd] -] [bd,sd]
+               bd [[sd,bd] [- - sd]] [[bd@ sd] -] [bd,sd]
+               bd [[sd,bd] [- - sd]] [[bd@ sd] -] [bd,sd]
+               bd [[sd,bd] [- - sd]] [[bd@ sd] -] [bd,sd]
+               bd [[sd,bd] [- - sd]] [bd bd] -
+               [bd [- - bd]] sd [- bd] sd 
+               [bd [- - bd]] [sd@@ [- bd]] [- [- sd@] bd@] sd 
+               [bd [- - bd]] sd [- bd] [sd [- - bd]] 
+               [bd [- - bd]] [sd@@@@ bd] [bd rim] -
                >`)
-._pianoroll()
-
-_test$: s(`<[bd@@@@ bd] [bd@@@@ bd] [bd bd] sd>`)
-._pianoroll()
-_test$: s(`<<hh <hh oh> hh hh>*2>`)
+.gain(0.5)
 ._pianoroll()
 
 // chords
 
-chords$: note(`<[f4,a4]@@@ [e4,c4]@ [e4,c4] [bb3,d4]
+chords$: note(`<- [f4,a4]@@@ [e4,c4]@ [e4,c4] [bb3,d4]
           [a,c#4]@ [a,c#4] [c#4,e4] [d4,f4]@ [c4,eb4] [f4,a]
           [bb,d4]@@@ [c4,e4]@@@
           [f4,a4] [- [e4,c4]] [- [e4,c4]] - [a,g4] [- [d4,f4]] [- [d4,f4]] -
@@ -92,18 +222,19 @@ chords$: note(`<[f4,a4]@@@ [e4,c4]@ [e4,c4] [bb3,d4]
           [f4,a4]@ [e4,g4] [e4,g4] [e4,g4]@ [d4,f4] [d4,f4] [bb,d4]@ [c#4,e4] [c#4,e4] [d4,f4]@ [c4,eb4] [d4,f4] [bb,d4]@ [c4,e4] [c4,e4] [c4,e4]@ [d4,f4] [d4,f4] [bb,d4]@ [[c4,e4] [c4,e4]] -
           [[f4,a4] [f4,a4]] - [- - [f4,a4]@] [- [f4,a4]@@] [[e4,g4] [e4,g4]] [- - - [d4,f4]] [- - [d4,f4]@] [[bb,d4] [bb,d4]] [g,bb] [d4,f4] [c#4,e4,g4] [g4,bb4] [f4,a4] [a4,c5] [c4,eb4] [d4,f4]
           [[f4,a4] [f4,a4]] - [- - [f4,a4]@] [- [f4,a4]@@] [[e4,g4] [e4,g4]] [- - - [d4,f4]] - [d4,f4] [bb,d4] - [d4,f4] [f4,g4] [c#4,e4] - [b4,d5] [c#5,e5] - - - -
-          [f4,a4] [- [e4,g4]] - -
+          [f4,a4] [- [e4,g4]]@ -
           [f#4,a#4] - [f4,g#4] [f4,g#4] [f4,g#4] - [f#4,a#4] [f#4,a#4] [b,eb4] - [d4,f4] [g#4,b4] [gb4,bb4] - [f#4,ab4] [gb4,bb4] [gb4,bb4] - [f4,g#4] [f4,g#4] [f4,g#4] - [f#4,bb4] [f#4,bb4] [b,eb4] - [f4,ab4] [bb,eb4] [c#4,f#4] - [- [f#4,bb4]] [- [f#4,bb4]]
           [f#4,a#4] - [f4,g#4] [f4,g#4] [f4,g#4] - [f#4,a#4] [f#4,a#4] [b,eb4] - [d4,f4] [g#4,b4] [gb4,bb4] - [f#4,ab4] [gb4,bb4] [gb4,bb4] - [f4,g#4] [f4,g#4] [f4,g#4] - [f#4,bb4] [f#4,bb4] [b,eb4] - [f4,ab4] [bb,eb4] [c#4,f#4] - [c#4,f#4] [f#4,bb4] [f#4,bb4] - [[c#4,g#4,c#5] [c#4,g#4,c#5]] -
           [f#4,a#4] - [f4,g#4] [f4,g#4] [f4,g#4] - [f#4,a#4] [f#4,a#4] [b,eb4] - [d4,f4] [g#4,b4] [gb4,bb4] - [f#4,ab4] [gb4,bb4] [gb4,bb4] - [f4,g#4] [f4,g#4] [f4,g#4] - [f#4,bb4] [f#4,bb4] [b,eb4] - [[f4,ab4] [f4,ab4]] - 
           [f#4,a#4] [- [c#4,f4,ab4]] - - [bb,f4,ab4] [- [f#4,bb4]] - - [b,d#4] [- [c#4,f4,ab4]] - - [bb,c#4,f#] - - -
           >`).sound("piano")
+.gain(0.75)
 .release(0.75)
 ._pianoroll()
 
 // bass
 
-full: note(`<bb2@@@ c@ c bb2 a2@ c# e d@ d# f2 bb1@@@ c2@@ - - - - - - - -
+bass: note(`<- bb2@@@ c@ c bb2 a2@ c# e d@ d# f2 bb1@@@ c2@@ - - - - - - - -
             [- - f c@ f2] bb1 [- c2] [- c2] - a1 [- d2] [- d2] - bb1 [- a1] [- a1] - d2 [- eb2] [- f2] - bb1 [- c2] [- c2] - f1 [- f1] [- f1] - bb1 [- c2] [- c2]
             - - - - -
             [bb1@@ bb1@ bb1] [- - bb2 bb1@ b1] [c2 c3] [bb1 bb2]
@@ -167,6 +298,125 @@ full: note(`<bb2@@@ c@ c bb2 a2@ c# e d@ d# f2 bb1@@@ c2@@ - - - - - - - -
 .gain(3)
 ._pianoroll()
 
+// melody
+
+melody: note(`<[- - - f@ g] [a f] [f d] [d bb2] [bb2 a] 
+                 [a@@@ g] g - [- - - e@ f]
+                 [g e] [e d] [c# bb] [a e] 
+                 [e@@@ d] [f@@ - f] [e c] [a2 c] 
+                 d@ - -
+                 - [- d] [c a2] [g2 f2]
+                 - - - - - - - -
+                 [f@ c c@ c] [c a2] [d@ c - - -] [- - - - - f2]
+                 [g2@ f2 g2@ f2] [g2@ f2 g2@ f2] [a2@ c - - -] -
+                 [f@ c c@ -] [c a2] [d@ c - - -] [- - - - - f]
+                 [g@ f g@ f] [g@ f g@ a] [f# d] [c d]
+                 [f e] [c g2] [a2 c] [g2 f2]
+                 - [- - - - - d2] [d2 a2] [g2 -]
+                 [f e] [c g2] [a2 c] [g2 f2]
+                 - [- - - g2@ f2] - [d@ e f@ g]
+                 [a g] [d4 a] [a g] [- - - e@ f]
+                 [g f] [c4 a] [g f] [- c]
+                 [d e] [f d] [e f] [g f]
+                 [g c4] [bb c4] [bb@@ - a] [- - - f@ g]
+                 [a g] [d4 bb] [a g] [- - e e@ f]
+                 [g@ - - - g] [g c4] [d4 c4] [a c4]
+                 [f - - - - f] [a@ d f@ -] [- - - - - d] [d@ f -]
+                 - - - - - - - - - - - - - - - -
+                 [f@ c c@ c] [c a2] [d@ c - - -] [- - - - - f2]
+                 [g2@ f2 g2@ f2] [g2@ f2 g2@ f2] [a2@ c - - -] -
+                 [f@ c c@ -] [c a2] [d@ c - - -] [- - - - - f]
+                 [g@ f g@ f] [g@ f g@ a] [f# d] [c d]
+                 [f e] [c g2] [a2 c] [g2 f2]
+                 - - [d2 a2] [g2 -]
+                 [f e] [c g2] [a2 c] [g2 f2]
+                 - [- - - g2@ f2] - [- - d d@ d]
+                 [f f] [f@ f f@ -] [f@@ d@ a] [- - d d@ d]
+                 [f f] [f@ f f@ -] [f@@ d@ a] [- - d d@ d]
+                 [f f] [f@ f f@ -] [f@@ d@ a] [- - a a@ bb]
+                 [c4@ a - - a] [g@ f f@ -] [g@ a a@ bb] [a g]
+                 [f@ - - - d] [f@ d f@ -] [a g] [e a2]
+                 [c -] [a2 c] [g f] [e c]
+                 [d e] [f g] [e c] [g f]
+                 - - [d e] [f g]
+                 [a g] [d4 a] [a g] [- - - e@ f]
+                 [g f] [c4 a] [g f] [- c]
+                 [d e] [f d] [e f] [g f]
+                 [g c4] [bb c4] [bb@@ - a] [- - - f@ g]
+                 [a g] [d4 bb] [a g] [- - e e@ f]
+                 [g -] [g c4] [d4 c4] [a d]
+                 [f -] [d f] [bb a] [c g]
+                 f@@@
+                 - - - - - - - - - - - - - - - - - - - - - - - [- - - - - g]
+                 [a@ g a@ g] [a@ g d@ g] [a@ g a@ d4] [- - a g@ f]
+                 [g@ f g@ c4] [- - a - - g] [- - f - - -] [d c]
+                 [bb2 c] [d f] [g f] [g f]
+                 [g c4] [bb c4] [bb@ - a@ a] [- - - f@ g]
+                 [- - a a@ g] [a@ g d@ g] [a@ - - - g] [a@ d4 a@ f]
+                 [g - - - - f] [g@ g c4@ c4] [d4 c4] [a d]
+                 [f -] [d e] [f g] [a d4]
+                 c#4@ d4 e4
+                 - - - [d@ e f@ g]
+                 [a g] [d4 a] [a g] [d#@ f f#@ g#]
+                 [a# g#] [d#4 a#] [a# g#] [- - - f@ f#]
+                 [g# f#] [c#4 a#] [g# f#] [- c#]
+                 [d# f] [f# d#] [f f#] [g# f#]
+                 [g# c#4] [b c#4] [b@@ - a#] [- - - f#@ g#]
+                 [a# g#] [d#4 b] [a# g#] [- - f f@ f#]
+                 [g#@ - - - g#] [g# c#4] [d#4 c#4] [a# c#4]
+                 [f# - - - - f#] [a#@ d# f#@ -] [- - - - - d#] [d#@ f# -]
+                 - - [d# f] [f# g#]
+                 [a# g#] [d#4 a#] [a# g#] [- - - f@ f#]
+                 [g# f#] [c#4 a#] [g# a#] [- c#]
+                 [d# f] [f# d#] [f f#] [g# f#]
+                 [g# c#4] [b c#4] [b@@ c#4@ a#] [- - - f#@ g#]
+                 [a# g#] [d#4 b] [a# g#] [- - f f@ f#]
+                 [g#@ - - - g#] [g# c#4] [d#4 c#4] [a# c#4]
+                 [f# - - - - f#] [a#@ d# f#@ -] [- - - - - d#] [d#@ f# -]
+                 - - [- eb] [bb eb] [- bb]
+                 [eb f#] [- bb] [eb f#] -
+                 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+              >`).sound("triangle")
+.gain(1.1)
+.transpose(12)
+._pianoroll()
+
+other: note(`<- - - - - - - - - - - - - - - - - - - - - - - - -
+              [bb2@ c g@ -] [d [e,a]] [- g] [e@ f e@ f]
+              [g f] [c [c,e]] [- f] -
+              - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+              - - [- d4] [e4 d4]
+              [c4 -] - [f4 e4] [a c4]
+              [bb -] - [g4 f4] [e4 f4]
+              - - - - 
+              - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+              [bb eb] [f# ab] [bb@ - eb4] [- bb] 
+              [ab c#] [f c#4] [b bb] [bb -] 
+              [eb f] [f# eb] [f f#] [g# f#]
+              [g# c#4] [b c#4] [b -] [bb -]
+              [bb eb] [f# ab] [bb@ - eb4] [- bb] 
+              [ab c#] [f c#4] [b bb] [g# bb]
+              [eb -] [bb eb] [- bb4] [eb4 f#4]
+              [bb ab] [eb4 bb] [- ab] -
+              [ab f#] [c#4 f4] [- f#4] -
+              [f# f] [c# g#2] [bb2 c#] [f g#]
+              f#@ - -
+           >`).sound("z_triangle")
+.gain(0.75)
+.transpose(12)
+._pianoroll()
 
 
-// for melody theres a pickup note at the start of the song so remember that for when working on melody
+guitar: note(`<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+             - - - [-@ c d@ f]
+              [g@ ab a@ g] [ab@ a g@ ab] [a@ g ab@ a] [g@ ab a@ ab]
+              [g@ f d@ f] [d@ c c#@ d] [c@ a2 g2@ f2] [g2@ f2 g2@ a2]
+              [f2 -] [- - f2 a2@ f] [e@ c bb2@ a2] [g2@ a2 g2@ f2]
+              [g2@ c d@ f] [g@ - bb@ b] [c4@ g - - a] [- f]
+              [- - - e@ f] [- - e f - -] [[c,c4] - [bb2,bb] -] [[a2,a] - [bb2,bb] -]
+              [[c,c4] -] [[g2,g] -] [[f2,f] -] [[e2,e] [f2,f]]
+              [- a] [d f] [- a] [d f]
+              >`).sound("gm_electric_guitar_clean")
+.gain(0.75)
+.transpose(12)
+._pianoroll()
